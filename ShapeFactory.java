@@ -1,5 +1,6 @@
 public class ShapeFactory {
 
+    //use getShape method to get an object
     public Shape getShape(String shapeType) {
         if (shapeType == null) {
             return null;
