@@ -7,7 +7,7 @@ public class kitchenroomLight implements Light{
     @Override
     public void on() {
         brightness = 100;
-        System.out.println("Kitchen light is ON");
+        System.out.println("Kitchen light is ON at full Brightness");
     }
 
     @Override

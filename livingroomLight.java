@@ -6,7 +6,7 @@ public class livingroomLight implements Light{
     @Override
     public void on() {
         brightness = 100;
-        System.out.println("Living room light is ON");
+        System.out.println("Living room light is ON at full brightness");
     }
 
     @Override

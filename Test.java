@@ -22,16 +22,18 @@ public class Test {
         remote.onButtonWasPressed(0);
         remote.offButtonWasPressed(0);
         remote.undoButtonWasPressed();
-        remote.onButtonWasPressed(0);
-        kitchenLightDim.execute();
-        remote.undoButtonWasPressed();
+
 
         System.out.println("\nTesting Living Room Light:");
-        remote.onButtonWasPressed(0);
-        remote.offButtonWasPressed(0);
-        remote.undoButtonWasPressed();
         remote.onButtonWasPressed(1);
-        livingRoomLightDim.execute();
+        remote.offButtonWasPressed(1);
         remote.undoButtonWasPressed();
+
+        System.out.println("\nTesting Dim Lights");
+        kitchenLightDim.execute();
+        kitchenLightDim.undo();
+
+        livingRoomLightDim.execute();
+        livingRoomLightDim.undo();
     }
 }
